@@ -1,7 +1,7 @@
 package org.tp;
 
 import java.io.IOException;
-
+// falta agregar que tome como argumento la ruta de los 2 archivos
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -17,6 +17,8 @@ public class Main {
         Partido partido3 = new Partido(camerun, francia);
 
         partido.leerPartido();
+        System.out.println(listaPartidos);
+
 
         System.out.println("los goles del equipo de " + partido.getEquipo1().getNombre() + " son: " + partido.getGolesEquipo1());
         System.out.println("los goles del equipo de " + partido.getEquipo2().getNombre() + " son: " + partido.getGolesEquipo2());

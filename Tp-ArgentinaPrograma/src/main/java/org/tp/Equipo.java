@@ -18,6 +18,10 @@ public class Equipo {
         return descripcion;
     }
 
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + " Descripcion: " + descripcion;
+    }
 
 
 

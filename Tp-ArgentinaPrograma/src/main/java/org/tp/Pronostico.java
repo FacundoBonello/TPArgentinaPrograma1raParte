@@ -54,12 +54,12 @@ public class Pronostico {
 
                 if(partido.getEquipo1().getNombre().equals(pronostico)) {
 
-                    if(datos[1].equals("X")) {
+                    if(datos[2].equals("X")) {
 
                         this.equipo = partido.getEquipo1();
                         this.resultado = ResultadoEnum.GANADOR;
                     }
-                    else if(datos[2].equals("X")) {
+                    else if(datos[3].equals("X")) {
                         this.equipo = partido.getEquipo1();
                         this.resultado = ResultadoEnum.EMPATE;
                     }
@@ -67,12 +67,12 @@ public class Pronostico {
 
                 if(partido.getEquipo2().getNombre().equals(pronostico)) {
 
-                    if(datos[3].equals("X")) {
+                    if(datos[4].equals("X")) {
 
                         this.equipo = partido.getEquipo2();
                         this.resultado = ResultadoEnum.GANADOR;
                     }
-                    else if(datos[2].equals("X")) {
+                    else if(datos[3].equals("X")) {
                         this.equipo = partido.getEquipo2();
                         this.resultado = ResultadoEnum.EMPATE;
                     }
