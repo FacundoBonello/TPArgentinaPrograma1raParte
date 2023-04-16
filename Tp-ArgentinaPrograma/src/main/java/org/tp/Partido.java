@@ -10,7 +10,7 @@ public class Partido {
     private Equipo equipo2;
     private Integer golesEquipo1 ;
     private Integer golesEquipo2 ;
-    private String [] datos;
+
 
 
     public Partido(Equipo equipo1, Equipo equipo2) {
@@ -46,11 +46,12 @@ public class Partido {
 
     /*en este metodo se lee el archivo y se busca que los nombres en el archivo coincidan con los que se pasaron de la clase Equipo para saber la cantidad de goles */
 
-    public void leerPartido() throws IOException {
+    public static void leerPartido(List<Partido> listaPartidos) throws IOException {
 
         List<Equipo> listaEquipos = new ArrayList<>();
-        List<Partido> listaPartidos = new ArrayList<>();
+        //List<Partido> listaPartidos = new ArrayList<>();
 
+        String [] datos;
         FileReader fr = null;
         BufferedReader br = null;
 
@@ -84,22 +85,24 @@ public class Partido {
 
 
 
-            for (String resultado : datos) { //recorro el array
-                if(resultado.equals(equipo1.getNombre())) {
-
-                    golesEquipo1 = Integer.parseInt(datos[2]); /*Si en la linea leida se encuentra el nombre del Equipo 1 enotnces el campo de datos[2]
-     				                                             Es donde se encuentra la cantidad de goles anotados por el equipo 1 */
-                }
-
-                if(resultado.equals(equipo2.getNombre())) {
-
-                    golesEquipo2 = Integer.parseInt(datos[3]); //si coincide con el equipo 2 entonces el campo de los goles corresponde a datos[3]
-                }
-
-
-            }
+//            for (String resultado : datos) { //recorro el array
+//                if(resultado.equals(equipo1.getNombre())) {
+//
+//                    golesEquipo1 = Integer.parseInt(datos[2]); /*Si en la linea leida se encuentra el nombre del Equipo 1 enotnces el campo de datos[2]
+//     				                                             Es donde se encuentra la cantidad de goles anotados por el equipo 1 */
+//                }
+//
+//                if(resultado.equals(equipo2.getNombre())) {
+//
+//                    golesEquipo2 = Integer.parseInt(datos[3]); //si coincide con el equipo 2 entonces el campo de los goles corresponde a datos[3]
+//                }
+//
+//
+//            }
             Equipo equipo1Lista = null;
             Equipo equipo2Lista = null;
+            int golesEq1 = 0;
+            int golesEq2 = 0;
 
             int indice = 0;
             int check = 0;                                                      //verifica si agregue a 2 equipos
@@ -107,20 +110,20 @@ public class Partido {
                 if (listaEquipos.get(indice).getNombre().equals(datos[1])) {
                     equipo1Lista = listaEquipos.get(indice);
                     indice++;
-                    this.golesEquipo1 = Integer.parseInt(datos[2]);
+                    golesEq1 = Integer.parseInt(datos[2]);
                     check++;
 
                 } else if (listaEquipos.get(indice).getNombre().equals(datos[4])) {
                     equipo2Lista = listaEquipos.get(indice);
                     indice++;
-                    this.golesEquipo2 = Integer.parseInt(datos[3]);
+                    golesEq2 = Integer.parseInt(datos[3]);
                     check++;
                 }else{
                     indice++;
                 }
 
                 if(check == 2) {
-                    Partido partido = new Partido(equipo1Lista, equipo2Lista, golesEquipo1, golesEquipo2);
+                    Partido partido = new Partido(equipo1Lista, equipo2Lista, golesEq1, golesEq2);
                     listaPartidos.add(partido);
                     check = 0;
                 }
