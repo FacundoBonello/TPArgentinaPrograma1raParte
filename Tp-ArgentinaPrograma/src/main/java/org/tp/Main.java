@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         List<Partido> listaPartidos = new ArrayList<>();
         Partido.leerPartido(listaPartidos);
-        System.out.println(listaPartidos);
+        System.out.println(listaPartidos.get(0));
 
 
 

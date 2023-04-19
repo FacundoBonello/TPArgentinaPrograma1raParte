@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44654130-1302-4333-851f-34d441c938e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Resultados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tp-ArgentinaPrograma.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Tp-ArgentinaPrograma.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Equipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Partido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Pronostico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/ResultadoEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/GanadorEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Equipo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Partido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Partido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Pronostico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/tp/ResultadoEnum.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,12 +254,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
