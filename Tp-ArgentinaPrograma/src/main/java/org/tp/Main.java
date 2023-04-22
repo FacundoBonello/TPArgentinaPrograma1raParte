@@ -11,6 +11,7 @@ public class Main {
         List<Partido> listaPartidos = new ArrayList<>();
         Partido.leerPartido(listaPartidos);
         System.out.println(listaPartidos.get(0));
+        Pronostico.leerPronostico(listaPartidos, 1, 0);
 
 
 

@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Pronostico {
@@ -11,7 +12,6 @@ public class Pronostico {
     private Partido partido;
     private Equipo equipo;
     private GanadorEnum resultado;
-    private String [] datos;
 
     public Pronostico(Partido partido) {
 
@@ -36,7 +36,8 @@ public class Pronostico {
     }
 
 
-    public void leerPronostico() throws IOException{
+    public static void leerPronostico(List<Partido> listaPartidos, int cantPuntos, int cantPuntosExtra) throws IOException{
+        String [] datos;
 
         Map<String, Integer> participantes = new HashMap<>();
 
@@ -57,7 +58,23 @@ public class Pronostico {
                 if(!participantes.containsKey(datos[0])){   //verifico que no añadí al participante
                     participantes.put(datos[0], 0);
                 }
-
+                for(Partido partido : listaPartidos){
+                    if(partido.getEquipo1().getNombre().equals(datos[1]) && partido.getEquipo2().getNombre().equals(datos[5])){
+                        GanadorEnum ganadorReal = partido.getResultado();
+                        GanadorEnum ganadorPronostico = null;
+                        if(datos[2].equals("X")){
+                            ganadorPronostico = GanadorEnum.EQUIPO1;
+                        } else if (datos[3].equals("X")) {
+                            ganadorPronostico = GanadorEnum.EMPATE;
+                        } else if (datos[4].equals("X")) {
+                            ganadorPronostico = GanadorEnum.EQUIPO2;
+                        }
+                        if(ganadorReal == ganadorPronostico){              //suma los puntos
+                            Integer puntos = participantes.get(datos[0]) + puntos(cantPuntos, cantPuntosExtra);
+                            participantes.put(datos[0], puntos);
+                        }
+                    }
+                }
 
             }
 
@@ -104,6 +121,7 @@ public class Pronostico {
 
             linea = br.readLine();
         }
+        System.out.println(participantes);
 
         br.close();
     }
@@ -117,6 +135,10 @@ public class Pronostico {
 //        }
 //        return puntos;
 //    }
+        public static int puntos(int cantPuntos, int cantPuntosExtra) {
+        int puntos = cantPuntos;
+        return puntos;
+    }
 }
 
 

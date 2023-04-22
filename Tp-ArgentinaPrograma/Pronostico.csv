@@ -1,4 +1,13 @@
 Participante;Equipo1;Gana 1;Empate;Gana 2;Equipo 2
 Mariana;Argentina;X;;;Arabia Saudita
 Mariana;Polonia;;X;;Mexico
-Mariana;Camerun;;;X;Francia
+Mariana;Argentina;X;;;Mexico
+Mariana;Arabia Saudita;;X;;Polonia
+Pedro;Argentina;X;;;Arabia Saudita
+Pedro;Polonia;;;X;Mexico
+Pedro;Argentina;X;;;Mexico
+Pedro;Arabia Saudita;;;X;Polonia
+Jose;Argentina;;;X;Arabia Saudita
+Jose;Polonia;;X;;Mexico
+Jose;Argentina;X;;;Mexico
+Jose;Arabia Saudita;;;X;Polonia

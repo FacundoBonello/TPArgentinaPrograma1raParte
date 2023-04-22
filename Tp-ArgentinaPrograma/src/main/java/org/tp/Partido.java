@@ -190,7 +190,7 @@ public class Partido {
 
     @Override
     public String toString() {
-        return equipo1 + golesEquipo1.toString() + golesEquipo2.toString() + equipo2 + resultado;
+        return equipo1 + "" + golesEquipo1.toString() + "-" + golesEquipo2.toString() + "" + equipo2 + " Ganador:" + resultado;
     }
 
 }
