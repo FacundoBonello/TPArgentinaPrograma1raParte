@@ -54,7 +54,7 @@ public class Partido {
 
     /*en este metodo se lee el archivo y se busca que los nombres en el archivo coincidan con los que se pasaron de la clase Equipo para saber la cantidad de goles */
 
-    public static void leerPartido(List<Partido> listaPartidos) throws IOException {
+    public static void leerPartido(String archivoResultados, List<Partido> listaPartidos) throws IOException {
 
         List<Equipo> listaEquipos = new ArrayList<>();
 
@@ -62,7 +62,7 @@ public class Partido {
         FileReader fr = null;
         BufferedReader br = null;
 
-        fr = new FileReader("Resultados.csv"); //se abre el archivo resultados
+        fr = new FileReader(archivoResultados); //se abre el archivo resultados
         br = new BufferedReader(fr);
 
         String linea = br.readLine();
@@ -87,20 +87,7 @@ public class Partido {
             }
 
 
-//            for (String resultado : datos) { //recorro el array
-//                if(resultado.equals(equipo1.getNombre())) {
-//
-//                    golesEquipo1 = Integer.parseInt(datos[2]); /*Si en la linea leida se encuentra el nombre del Equipo 1 enotnces el campo de datos[2]
-//     				                                             Es donde se encuentra la cantidad de goles anotados por el equipo 1 */
-//                }
-//
-//                if(resultado.equals(equipo2.getNombre())) {
-//
-//                    golesEquipo2 = Integer.parseInt(datos[3]); //si coincide con el equipo 2 entonces el campo de los goles corresponde a datos[3]
-//                }
-//
-//
-//            }
+
 
             //junta los goles y crea el partido
             Equipo equipo1Lista = null;
@@ -147,45 +134,7 @@ public class Partido {
     }
 
 
-//    public ResultadoEnum resultado(Equipo equipo) {
-//
-//        ResultadoEnum resultadoequipo = null;
-//
-//        if(equipo.getNombre().equals(this.equipo1.getNombre())) { //comparo si el equipo que le pase al metodo coincide con el Equipo 1 de la clase
-//
-//            if(golesEquipo1 > golesEquipo2) { //si coinciden entonces me fijo si el equipo 1 metio mas goles que el equipo 2, en caso de ser cierto el equipo que pasamos
-//                //por parametro es el ganador
-//
-//                resultadoequipo = ResultadoEnum.GANADOR;
-//            }
-//            else if(golesEquipo1 < golesEquipo2){
-//                resultadoequipo = ResultadoEnum.PERDEDOR; //comparo si el equipo 2 metio mas goles que el 1
-//            }
-//            else {
-//                resultadoequipo = ResultadoEnum.EMPATE;
-//            }
-//
-//        }
-//
-//        if(equipo.getNombre().equals(this.equipo2.getNombre())) { //si el equipo no coincide con el quipo 1 entonces comparo con el equipo 2
-//
-//            if(golesEquipo1 < golesEquipo2) {
-//
-//                resultadoequipo = ResultadoEnum.GANADOR;
-//            }
-//            else if(golesEquipo1 > golesEquipo2){
-//                resultadoequipo = ResultadoEnum.PERDEDOR;
-//            }
-//            else {
-//                resultadoequipo = ResultadoEnum.EMPATE;
-//            }
-//        }
-//
-//
-//
-//        return resultadoequipo;
-//
-//    }
+
 
 
     @Override

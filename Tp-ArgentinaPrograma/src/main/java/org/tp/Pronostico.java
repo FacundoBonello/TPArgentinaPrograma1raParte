@@ -36,7 +36,7 @@ public class Pronostico {
     }
 
 
-    public static void leerPronostico(List<Partido> listaPartidos, int cantPuntos, int cantPuntosExtra) throws IOException{
+    public static void leerPronostico(String archivoPronostico, List<Partido> listaPartidos, int cantPuntos, int cantPuntosExtra) throws IOException{
         String [] datos;
 
         Map<String, Integer> participantes = new HashMap<>();
@@ -45,7 +45,7 @@ public class Pronostico {
         FileReader fr = null;
         BufferedReader br = null;
 
-        fr = new FileReader ("Pronostico.csv"); //se abre el archivo pronosticos
+        fr = new FileReader (archivoPronostico); //se abre el archivo pronosticos
         br = new BufferedReader(fr);
 
         String linea = br.readLine();
@@ -84,40 +84,7 @@ public class Pronostico {
 
 
 
-//
-//            for (String pronostico : datos) {
-//
-//
-//                if(partido.getEquipo1().getNombre().equals(pronostico)) {
-//
-//                    if(datos[2].equals("X")) {
-//
-//                        this.equipo = partido.getEquipo1();
-//                        this.resultado = ResultadoEnum.GANADOR;
-//                    }
-//                    else if(datos[3].equals("X")) {
-//                        this.equipo = partido.getEquipo1();
-//                        this.resultado = ResultadoEnum.EMPATE;
-//                    }
-//                }
-//
-//                if(partido.getEquipo2().getNombre().equals(pronostico)) {
-//
-//                    if(datos[4].equals("X")) {
-//
-//                        this.equipo = partido.getEquipo2();
-//                        this.resultado = ResultadoEnum.GANADOR;
-//                    }
-//                    else if(datos[3].equals("X")) {
-//                        this.equipo = partido.getEquipo2();
-//                        this.resultado = ResultadoEnum.EMPATE;
-//                    }
-//                }
-//
-//
-//
-//
-//            }
+
 
             linea = br.readLine();
         }
@@ -126,15 +93,7 @@ public class Pronostico {
         br.close();
     }
 
-//    public int puntos(int cantPuntos, int cantPuntosExtra) {
-//        int puntos = 0;
-//        int puntosExtra = 0;
-//        ResultadoEnum resultadoRealParaEquipo = this.partido.resultado(this.equipo);
-//        if(resultadoRealParaEquipo == this.resultado) {
-//            puntos = cantPuntos;
-//        }
-//        return puntos;
-//    }
+
         public static int puntos(int cantPuntos, int cantPuntosExtra) {
         int puntos = cantPuntos;
         return puntos;
