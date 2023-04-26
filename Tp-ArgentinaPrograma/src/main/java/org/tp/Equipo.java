@@ -8,7 +8,7 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    protected String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 

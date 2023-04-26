@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44654130-1302-4333-851f-34d441c938e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Pronostico.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Pronostico.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tp/Fase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tp/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tp/utilidades/LectorCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tp/utilidades/LectorDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resultados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Resultados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tp-ArgentinaPrograma.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Tp-ArgentinaPrograma.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Tp-ArgentinaPrograma.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Equipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Partido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Pronostico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tp/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tp/Ronda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Partido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Partido.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/tp/Pronostico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/tp/Pronostico.class" afterDir="false" />
@@ -177,6 +186,13 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="HIDE_WARNINGS" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -253,7 +269,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/allen2/Documents/Argentina programa"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/allen2/Documents/Argentina programa",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
@@ -270,7 +290,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.tp.Main" />
       <module name="Tp-ArgentinaPrograma" />
-      <option name="PROGRAM_PARAMETERS" value="Resultados.csv Pronostico.csv" />
+      <option name="PROGRAM_PARAMETERS" value="Resultados.csv 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.tp.*" />
@@ -294,6 +314,17 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -436,5 +467,20 @@
   </component>
   <component name="WebViewSettings">
     <webview flattenPackages="false" showMembers="false" autoscrollToSource="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/tp/Pronostico.java</url>
+          <line>39</line>
+          <properties class="org.tp.Pronostico" method="fueAcertado">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
